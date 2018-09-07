@@ -10,5 +10,5 @@ const app = express();
 app.use(morgan('dev'));
 app.use(bodyParser.json());
 
-app.use('/user', require('./routes/user'));
+app.use('/user', require('./routes/UserRoute'));
 module.exports = app;
