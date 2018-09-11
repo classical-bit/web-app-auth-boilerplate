@@ -1,9 +1,10 @@
 {
   "name": "web-app-auth-boilerplate",
   "version": "1.0.0",
-  "description": "Boilerplate for web-app authentication & mongodb as database",
+  "description": "web app api authentication boilerplate",
   "main": "index.js",
   "scripts": {
+    "server-start": "nodemon api/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -11,12 +12,23 @@
     "url": "git+https://github.com/developersTogether/web-app-auth-boilerplate.git"
   },
   "keywords": [
-    "web", "app", "auth", "authentication", "api", "node", "boilerplate"
+    "web",
+    "app",
+    "api",
+    "authentication",
+    "boilerplate"
   ],
   "author": "Deepanshu",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/developersTogether/web-app-auth-boilerplate/issues"
   },
-  "homepage": "https://github.com/developersTogether/web-app-auth-boilerplate#readme"
+  "homepage": "https://github.com/developersTogether/web-app-auth-boilerplate#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.18.4"
+  }
 }
